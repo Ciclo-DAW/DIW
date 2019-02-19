@@ -1,258 +1,255 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>Grill A Carballeira</title>
-        <meta name="description" content="">
-        
-    </head>
-    <body>
-		<header>
-			 <!-- zona 1 -->
-			<div>
-				<div>
+
+<head>
+	<meta charset="utf-8">
+	<title>Grill A Carballeira</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="header">
+		<!-- zona 1 -->
+		<div class="header__topbar">
+			<!-- He creado un nuevo div para aplicarle a él el 80% de ancho -->
+			<div class="topbar__container">
+				<div class="topbar__menu">
 					<div>
-						<a href="#">Home</a>
-						<a href="#">Mi cuenta</a>
+						<a class="topbar__link" href="#">Home</a>
+						<a class="topbar__link" href="#">Mi cuenta</a>
 					</div>
 				</div>
-				<div>
+				<div class="topbar__carrito">
 					<div>
-						<i></i>
-						(<a href="#">5 elementos</a>) en tu carro (<a href="#">45.80€</a>)
+						<i class="fas fa-shopping-cart"></i>
+						(<a class="topbar__link" href="#">5 elementos</a>) en tu carro (<a class="topbar__link" href="#">45.80€</a>)
 					</div>
 				</div>
 			</div>
-			 <!-- zona 2 -->
-			<div>
-				<div>
-					<a href="#"><img src="images/logo.png" title="" alt="" ></a>
+		</div>
+		<!-- zona 2 -->
+		<div class="header__nav">
+			<div class="nav__container">
+				<div class="nav__logo">
+					<a class="logo__link" href="#"><img class="logo__img" src="images/logo.png" title="" alt="logo"></a>
 				</div>
-				<div>
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">Conócemos</a></li>
-						<li><a href="">Productos</a></li>
-						<li><a href="">Contacto</a></li>
+				<div class="nav__menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="menu__link" href="">Home</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Conócemos</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Productos</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
 					</ul>
 				</div>
-				<div>  
-					<form method="get">
-						<input type="text" />
-						<input type="submit"/>
+				<div class="nav__search">
+					<form class="search__form" method="get">
+						<input class="search__input" type="text" />
+						<input class="search__button" type="submit" value="&#xf002" ; />
 					</form>
 				</div>
 			</div>
-		</header>
-		
-		 <!-- zona 3 -->
-		<div>
-			<div>
-				<h1>Comidas deliciosas</h1>
-				<p>Donec justo dui, semper vitae aliquam euzali, ornare pretium enim. Maecenas molestie diam
+		</div>
+	</header>
+
+	<!-- zona 3 -->
+	<div class="hero__container">
+		<div class="hero__info">
+			<h1 class="hero__title">Comidas deliciosas</h1>
+			<p class="hero__text">Donec justo dui, semper vitae aliquam euzali, ornare pretium enim. Maecenas molestie diam
 				<br><br>eget tellus luctus fermentum.</p>
-				<a href="">Comprar ahora</a>
-			</div>
-		  <img src="images/slide1.jpg" alt="" />
+			<a class="hero__link" href="">Comprar ahora</a>
 		</div>
+		<img class="hero__img" src="images/slide1.jpg" alt="" />
+	</div>
 
 
-		 <!-- zona 4 -->
+	<!-- zona 4 -->
+	<div class="entradas">
+		<div class="entradas__header">
+			<div>
+				<h2>Últimas entradas de blog</h2>
+				<img src="images/under-heading.png" alt="">
+			</div>
+		</div>
+		<div class="entradas__lista">
+			<div class="entrada">
+				<div class="entrada__wrapper">
+					<div class="entrada__fondo">
+						<img class="entrada__img" src="images/blogpost1.jpg" alt="" />
+					</div>
+					<div class="entrada__desc">
+						<div>
+							<h4 class="entrada__title"><a class="entrada__link" href="single-post.html">Sandwich de verano</a></h4>
+							<span class="entrada__fecha">12 Jul 2017</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="entrada">
+				<div class="entrada__wrapper">
+					<div class="entrada__fondo">
+						<img class="entrada__img" src="images/blogpost2.jpg" alt="" />
+					</div>
+					<div class="entrada__desc">
+						<div class="entrada__texto">
+							<h4 class="entrada__title"><a class="entrada__link" href="single-post.html">Nuevo Gran Sabor</a></h4>
+							<span class="entrada__fecha">23 Sep 2017</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="entrada">
+				<div class="entrada__wrapper">
+					<div class="entrada__fondo">
+						<img class="entrada__img" src="images/blogpost3.jpg" alt="" />
+					</div>
+					<div class="entrada__desc">
+						<div class="entrada__texto">
+							<h4 class="entrada__title"><a class="entrada__link" href="single-post.html">Pizza picante</a></h4>
+							<span class="entrada__fecha">14 Sep 2017</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="entrada">
+				<div class="entrada__wrapper">
+					<div class="entrada__fondo">
+						<img class="entrada__img" src="images/blogpost4.jpg" alt="" />
+					</div>
+					<div class="entrada__desc">
+						<div class="entrada__texto">
+							<h4 class="entrada__title"><a class="entrada__link" href="single-post.html">Comida sana</a></h4>
+							<span class="entrada__fecha">25 Ago 2017</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="entrada">
+				<div class="entrada__wrapper">
+					<div class="entrada__fondo">
+						<img class="entrada__img" src="images/blogpost5.jpg" alt="" />
+					</div>
+					<div class="entrada__desc">
+						<div class="entrada__texto">
+							<h4 class="entrada__title"><a class="entrada__link" href="single-post.html">Gran desayuno</a></h4>
+							<span class="entrada__fecha">17 Ago 2017</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="entrada">
+				<div class="entrada__wrapper">
+					<div class="entrada__fondo">
+						<img class="entrada__img" src="images/blogpost6.jpg" alt="" />
+					</div>
+					<div class="entrada__desc">
+						<div class="entrada__texto">
+							<h4 class="entrada__title"><a class="entrada__link" href="single-post.html">Zumo de fruta fresca</a></h4>
+							<span class="entrada__fecha">12 Ago 2017</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- zona 5 -->
+	<div>
+
 		<div>
-				<div>
-					<div>
-						<h2>Últimas entradas de blog</h2>
-						<img src="images/under-heading.png" alt="" >
-					</div>
-				</div>
-				<div>
-					<div>
-						<div>
-							<div>
-								<img src="images/blogpost1.jpg" alt="" />
-							</div>
-							<div>
-								<div>
-									<h4><a href="single-post.html">Sandwich de verano</a></h4>
-									<span>12 Jul 2017</span>
-								</div>
-								<div>
-									<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div>
-							<div>
-								<img src="images/blogpost2.jpg" alt="" />
-							</div>
-							<div>
-								<div>
-									<h4><a href="single-post.html">Nuevo Gran Sabor</a></h4>
-									<span>23 Sep 2017</span>
-								</div>
-								<div>
-									<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div>
-							<div>
-								<img src="images/blogpost3.jpg" alt="" />
-							</div>
-							<div>
-								<div>
-									<h4><a href="single-post.html">Pizza picante</a></h4>
-									<span>14 Sep 2017</span>
-								</div>
-								<div>
-									<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div>
-							<div>
-								<img src="images/blogpost4.jpg" alt="" />
-							</div>
-							<div>
-								<div>
-									<h4><a href="single-post.html">Comida sana</a></h4>
-									<span>25 Ago 2017</span>
-								</div>
-								<div>
-									<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div>
-							<div>
-								<img src="images/blogpost5.jpg" alt="" />
-							</div>
-							<div>
-								<div>
-									<h4><a href="single-post.html">Gran desayuno</a></h4>
-									<span>17 Ago 2017</span>
-								</div>
-								<div>
-									<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div>
-							<div>
-								<img src="images/blogpost6.jpg" alt="" />
-							</div>
-							<div>
-								<div>
-									<h4><a href="single-post.html">Zumo de fruta fresca</a></h4>
-									<span>12 Ago 2017</span>
-								</div>
-								<div>
-									<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<h2>Qué dicen los clientes...</h2>
+			<img src="images/under-heading.png" alt="">
 		</div>
-
-		 <!-- zona 5 -->
 		<div>
+			<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit
+				sed
+				arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor,
+				non
+				pulvinar felis sollicitudin.</p>
+			<h6>Antonio - <a href="#">Jefe de diseño</a></h6>
+		</div>
+	</div>
+
+	<!-- zona 6 -->
+	<footer>
+		<div>
+			<div>
+				<span>Póngase en contacto con nosotros</span>
+				<form method="get">
+					<input type="text" />
+					<input type="submit" />
+				</form>
+			</div>
+			<div>
+				<span>Síganos:</span>
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
 
 			<div>
-				<h2>Qué dicen los clientes...</h2>
-				<img src="images/under-heading.png" alt="" >
-			</div>
-			<div>
-				<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
-				<h6>Antonio - <a href="#">Jefe de diseño</a></h6>
-			</div>
-		</div>
-	
-		 <!-- zona 6 -->
-		<footer>
-			<div>
 				<div>
-					<span>Póngase en contacto con nosotros</span>
-					<form method="get">
-						<input type="text" />
-						<input type="submit"/>
-					</form>
+					<h4>Acerca de Grill</h4>
+					<p>Es la hora perfecta para comer una hamburguesa o una ensalada de bulgur o comida italiana, mexicana u
+						oriental.</p>
+					<p>Pásate por <a href="">Grill</a></p>
+					<p>Prueba nuestros platos</p>
 				</div>
 				<div>
-					<span>Síganos:</span> 
+					<h4>Categorías de la tienda</h4>
 					<ul>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+						<li><a href="#"><i></i>Nuevo Grill Menu</a></li>
+						<li><a href="#"><i></i>Zumos frescos y saludables</a></li>
+						<li><a href="#"><i></i>Deliciosas comidas picantes</a></li>
+						<li><a href="#"><i></i>Pizzas italianas sencillas</a></li>
+						<li><a href="#"><i></i>Yogures muy buenos</a></li>
+						<li><a href="#"><i></i>Helados para niños</a></li>
 					</ul>
 				</div>
-
 				<div>
+					<h4>Mensajes recientes</h4>
 					<div>
-						<h4>Acerca de Grill</h4>
-						<p>Es la hora perfecta para comer una hamburguesa o una ensalada de bulgur o comida italiana, mexicana u oriental.</p>
-						<p>Pásate por <a href="">Grill</a></p>
-						<p>Prueba nuestros platos</p>
+						<div>
+							<img src="images/recent-post1.jpg" alt="">
+						</div>
+						<div>
+							<h6><a href="#">Menús deliciosos y saludables</a></h6>
+							<span>24/12/2017</span>
+						</div>
 					</div>
 					<div>
-						<h4>Categorías de la tienda</h4>
-						<ul>
-							<li><a href="#"><i></i>Nuevo Grill Menu</a></li>
-							<li><a href="#"><i></i>Zumos frescos y saludables</a></li>
-							<li><a href="#"><i></i>Deliciosas comidas picantes</a></li>
-							<li><a href="#"><i></i>Pizzas italianas sencillas</a></li>
-							<li><a href="#"><i></i>Yogures muy buenos</a></li>
-							<li><a href="#"><i></i>Helados para niños</a></li>
-						</ul>
-					</div>
-					<div>
-							<h4>Mensajes recientes</h4>
-							<div>
-								<div>
-									<img src="images/recent-post1.jpg" alt="">
-								</div>
-								<div>
-									<h6><a href="#">Menús deliciosos y saludables</a></h6>
-									<span>24/12/2017</span>
-								</div>
-							</div>
-							<div>
-								<div>
-									<img src="images/recent-post2.jpg" alt="">
-								</div>
-								<div>
-									<h6><a href="#">Comidas sencillas y eficaces</a></h6>
-									<span>18/12/2017</span>
-								</div>
-							</div>
-					</div>
-					<div>
-						<h4>Más info</h4>
-						<p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.</p>
-						<ul>
-							<li><i></i>123-456-7890</li>
-							<li><i></i>Praza da Lexión s/n, 32002 - Ourense</li>
-							<li><i></i><a href="#">info@acarballeira.es</a></li>
-						</ul>
+						<div>
+							<img src="images/recent-post2.jpg" alt="">
+						</div>
+						<div>
+							<h6><a href="#">Comidas sencillas y eficaces</a></h6>
+							<span>18/12/2017</span>
+						</div>
 					</div>
 				</div>
 				<div>
-					<p>
-						<span>Copyright © 2018 <a href="#">CIFP A Carballeira</a> 
-						</span>
-					</p>
+					<h4>Más info</h4>
+					<p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.</p>
+					<ul>
+						<li><i></i>123-456-7890</li>
+						<li><i></i>Praza da Lexión s/n, 32002 - Ourense</li>
+						<li><i></i><a href="#">info@acarballeira.es</a></li>
+					</ul>
 				</div>
-				
 			</div>
-		</footer>
-    </body>
+			<div>
+				<p>
+					<span>Copyright © 2018 <a href="#">CIFP A Carballeira</a>
+					</span>
+				</p>
+			</div>
+
+		</div>
+	</footer>
+</body>
+
 </html>

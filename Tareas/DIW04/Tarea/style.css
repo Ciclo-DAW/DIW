@@ -1,0 +1,209 @@
+/* -------------------------------RESETS, FUENTES Y ESTILOS GENERALES------------------------------- */
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/fonts/fontawesome-webfont.eot");
+  src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+    url("fonts/fontawesome-webfont.woff") format("woff"),
+    url("fonts/fontawesome-webfont.ttf") format("truetype"),
+    url("fonts/fontawesome-webfont.svg") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Para que el padding y el border se incluyan en la anchura y altura de las cajas */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ----------------------------------------------ZONA 1-------------------------------------- */
+
+.header__topbar {
+  background-color: #333333;
+}
+
+.topbar__container {
+  width: 80%;
+  margin: 0 auto; /* Para centrar horizontalmente */
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+
+  display: flex; /* Para que ambos bloques estén alineados */
+  justify-content: space-between; /* Para separar ambos bloques */
+}
+
+.topbar__link {
+  color: #f78e21;
+  text-decoration: none;
+}
+
+/* ----------------------------------------------ZONA 2-------------------------------------- */
+
+.nav__container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  max-width: 120px;
+}
+
+.logo__link {
+  display: inline-block; /* Para que el link tenga la misma altura que la imagen */
+}
+
+.logo__img {
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #666666;
+  font-weight: bold;
+  font-size: 0.875rem;
+  padding: 15px;
+}
+
+.menu__link:hover {
+  color: #f78e21;
+  transition: all 0.2s ease; /* Por darle un poco de suavidad al cambio de color */
+}
+
+.search__form {
+  position: relative;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 5px;
+  /* display: flex; */
+}
+
+.search__input {
+  border: none; /* Quitamos el borde del input porque se lo dimos al formulario para que envolviese el botón */
+  /* width: 100%; */
+}
+
+.search__button {
+  font-family: "FontAwesome";
+  background-color: #fff;
+  color: #f78e21;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* --------------------------------------ZONA 3---------------------------------------- */
+
+.hero__container {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative; /* Para que el texto se posicione de forma absoluta con respecto a su padre */
+}
+
+.hero__info {
+  /* Centrado horizontal y vertical de un bloque posicionado absoluto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero__title {
+  text-transform: uppercase;
+  color: #f78e21;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.hero__text {
+  font-size: 14px;
+  color: #fff;
+  line-height: 13px;
+}
+
+.hero__link {
+  display: inline-block; /* Para poder aplicarle un margin-top y separarlo del texto */
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 8px 15px;
+  background-color: #f78e21;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+/* --------------------------------------ZONA 4---------------------------------------- */
+.entradas {
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 80%;
+}
+.entradas__header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+.entradas__lista {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entrada {
+  flex-basis: 33%;
+  padding: 20px;
+}
+
+.entrada__wrapper {
+  position: relative;
+}
+
+.entrada__img {
+  display: block; /* Para eliminar un pequeño espacio que se forma debajo de las imágenes al ser inline */
+  width: 100%;
+}
+
+.entrada__desc {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(39, 39, 39, 0.788);
+}
+
+.entrada__link {
+  display: inline-block; /* Para que al aplicarle un padding haga crecer al padre */
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.entrada__fecha {
+  display: inline-block;
+  padding: 5px;
+  font-size: 12px;
+  color: #f78e21;
+}
