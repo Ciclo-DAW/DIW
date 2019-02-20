@@ -43,6 +43,10 @@ body {
   text-decoration: none;
 }
 
+.topbar__menu .topbar__link {
+  margin-right: 20px;
+}
+
 /* ----------------------------------------------ZONA 2-------------------------------------- */
 
 .nav__container {
@@ -58,14 +62,16 @@ body {
 
 .nav__logo {
   max-width: 120px;
+  flex-shrink: 0;
 }
 
 .logo__link {
-  display: inline-block; /* Para que el link tenga la misma altura que la imagen */
+  display: block; /* Para que el link tenga la misma altura que la imagen */
 }
 
 .logo__img {
   width: 100%;
+  display: block; /* Eliminar espacios indeseados debajo de las imagenes que son inline */
 }
 
 .menu__list {
@@ -173,8 +179,12 @@ body {
   margin-bottom: 50px;
 }
 
-.section__title {
+.header__title {
   margin-bottom: 8px;
+}
+
+.header__img {
+  max-width: 100%;
 }
 
 .entradas__lista {
@@ -467,3 +477,67 @@ body {
 }
 
 /* -----------------------------------------MEDIA QUERIES---------------------------------------*/
+
+@media (max-width: 1200px) {
+  /* En tablets */
+  .topbar__container {
+    flex-direction: column; /* Cambiar la dirección del main axis para que los items se situen uno debajo del otro */
+    align-items: center;
+  }
+
+  .topbar__menu {
+    margin-bottom: 20px;
+  }
+
+  .nav__container {
+    flex-direction: column;
+  }
+
+  .nav__logo {
+    margin-bottom: 50px;
+  }
+
+  .nav__search {
+    display: none;
+  }
+
+  .hero__info {
+    display: none;
+  }
+
+  .entrada {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .footer__contact {
+    display: block;
+  }
+
+  .form {
+    margin-bottom: 40px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__section {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* En pantallas moviles */
+  .menu__link {
+    font-size: 10px;
+  }
+  .entrada {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
