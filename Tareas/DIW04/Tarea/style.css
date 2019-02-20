@@ -1,5 +1,7 @@
 /* -------------------------------RESETS, FUENTES Y ESTILOS GENERALES------------------------------- */
 
+/* NOTA: Yo estoy acostumbrado a utilizar el sistema BEM para nombrar los elementos de una web y es el sistema que utilicé para hacer esta práctica ya que normalmente uso SASS por comodidad y este sistema se complementa muy bien con él.*/
+
 @font-face {
   font-family: "FontAwesome";
   src: url("/fonts/fontawesome-webfont.eot");
@@ -76,7 +78,7 @@ body {
   text-transform: uppercase;
   color: #666666;
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 13px;
   padding: 15px;
 }
 
@@ -90,6 +92,11 @@ body {
   border: 1px solid rgb(211, 211, 211);
   padding: 5px;
   /* display: flex; */
+}
+
+.search__form:focus-within {
+  /* Esto aun no está implementado en el standard */
+  border: 1px solid #f78e21;
 }
 
 .search__input {
@@ -154,25 +161,32 @@ body {
 }
 
 /* --------------------------------------ZONA 4---------------------------------------- */
-.entradas {
+.section {
   margin: 0 auto;
   margin-top: 90px;
   width: 80%;
 }
-.entradas__header {
+.section__header {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 50px;
 }
+
+.section__title {
+  margin-bottom: 8px;
+}
+
 .entradas__lista {
   display: flex;
   flex-wrap: wrap;
 }
 
 .entrada {
-  flex-basis: 33%;
-  padding: 20px;
+  flex-basis: calc(33.3333% - 20px);
+  margin: 10px;
+  /* flex-basis: 33.3333%;
+  padding: 10px; */ /* OPCION 2 */
 }
 
 .entrada__wrapper {
@@ -205,5 +219,251 @@ body {
   display: inline-block;
   padding: 5px;
   font-size: 12px;
+  color: #c5c5c5;
+}
+
+/* --------------------------------------ZONA 5---------------------------------------- */
+.reviews {
+  margin-bottom: 90px;
+}
+.reviews__content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: #333333;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.reviews__text {
+  margin-bottom: 20px;
+}
+
+.reviews__name {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.reviews__link {
+  text-decoration: none;
   color: #f78e21;
 }
+
+/* --------------------------------------ZONA 6---------------------------------------- */
+
+.footer {
+  background-color: #f3f3f3;
+  color: #333333;
+  border-top: 3px solid #f78e21;
+}
+
+.footer__wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer__contact {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.form__content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.form__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.form__input {
+  display: inline-block;
+  border: none;
+  padding: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.form__button {
+  cursor: pointer;
+  border: none;
+  background-image: url(/images/subscribe-icon.png);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.redes__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.redes__botones {
+  list-style: none;
+  display: flex;
+}
+
+.redes__link {
+  font-size: 13px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  color: #adadad;
+  margin: 2px;
+  transition: all 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.redes__link:hover {
+  background-color: #f78e21;
+  color: #fff;
+}
+
+.footer__content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__section {
+  width: 25%;
+  margin-right: 20px;
+}
+
+/* .footer__section:last-child {
+  margin-right: 0;
+} */
+
+.footer__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+.about__link {
+  text-decoration: none;
+  color: #f78e21;
+}
+
+.categories__list {
+  list-style: none;
+}
+
+.fa-angle-right {
+  color: #f78e21;
+  margin-right: 3px;
+}
+
+.categories__item {
+  margin-bottom: 10px;
+}
+
+.categories__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333333;
+  font-size: 13px;
+}
+
+.mensajes__item {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.mensajes__miniatura {
+  width: 65px;
+  margin-right: 20px;
+  flex-shrink: 0; /* Para evitar que la imagen encoja cuando no cabe en el flex-container */
+}
+
+.mensajes__img {
+  display: block; /* Para eliminar el espacio que se crea debajo de la imagen en el contenedor */
+  width: 100%;
+}
+
+.mensajes__title {
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.mensajes__link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.mensajes__fecha {
+  font-size: 10px;
+  color: #f78e21;
+}
+.info__text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.info__lista {
+  list-style: none;
+}
+
+.info__item {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.info .fas {
+  font-size: 15px;
+  color: #f78e21;
+  margin-right: 10px;
+}
+
+.info__link {
+  text-decoration: none;
+  color: #f78e21;
+}
+
+.copyright {
+  margin-top: 40px;
+  font-size: 13px;
+}
+.copyright__link {
+  text-decoration: none;
+  color: #f78e21;
+}
+
+/* -----------------------------------------MEDIA QUERIES---------------------------------------*/

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
 				<div class="nav__menu">
 					<ul class="menu__list">
 						<li class="menu__item"><a class="menu__link" href="">Home</a></li>
-						<li class="menu__item"><a class="menu__link" href="">Conócemos</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Conócenos</a></li>
 						<li class="menu__item"><a class="menu__link" href="">Productos</a></li>
 						<li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
 					</ul>
@@ -66,10 +67,10 @@
 
 
 	<!-- zona 4 -->
-	<div class="entradas">
-		<div class="entradas__header">
+	<div class="section entradas">
+		<div class="section__header">
 			<div>
-				<h2>Últimas entradas de blog</h2>
+				<h2 class="section__title">Últimas entradas de blog</h2>
 				<img src="images/under-heading.png" alt="">
 			</div>
 		</div>
@@ -156,98 +157,106 @@
 	</div>
 
 	<!-- zona 5 -->
-	<div>
-
-		<div>
-			<h2>Qué dicen los clientes...</h2>
+	<div class="section reviews">
+		<div class="section__header">
+			<h2 class="section__title">Qué dicen los clientes...</h2>
 			<img src="images/under-heading.png" alt="">
 		</div>
-		<div>
-			<p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit
+		<div class="reviews__content">
+			<p class="reviews__text">Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec
+				arcu nec hendrerit
 				sed
 				arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor,
 				non
 				pulvinar felis sollicitudin.</p>
-			<h6>Antonio - <a href="#">Jefe de diseño</a></h6>
+			<h6 class="reviews__name">Antonio - <a class="reviews__link" href="#">Jefe de diseño</a></h6>
 		</div>
 	</div>
 
 	<!-- zona 6 -->
-	<footer>
-		<div>
-			<div>
-				<span>Póngase en contacto con nosotros</span>
-				<form method="get">
-					<input type="text" />
-					<input type="submit" />
-				</form>
-			</div>
-			<div>
-				<span>Síganos:</span>
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-				</ul>
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__contact">
+				<div class="form">
+					<span class="form__title">Póngase en contacto con nosotros</span>
+					<form class="form__content" method="get">
+						<input class="form__input" type="text" />
+						<input class="form__button" type="submit" value="" />
+					</form>
+				</div>
+				<div class="redes">
+					<span class="redes__title">Síganos:</span>
+					<ul class="redes__botones">
+						<li class="redes__item"><a class="redes__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="redes__item"><a class="redes__link" href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="redes__item"><a class="redes__link" href="#"><i class="fas fa-rss"></i></a></li>
+					</ul>
+				</div>
 			</div>
 
-			<div>
-				<div>
-					<h4>Acerca de Grill</h4>
-					<p>Es la hora perfecta para comer una hamburguesa o una ensalada de bulgur o comida italiana, mexicana u
-						oriental.</p>
-					<p>Pásate por <a href="">Grill</a></p>
-					<p>Prueba nuestros platos</p>
+			<div class="footer__content">
+				<div class="footer__section about">
+					<h4 class="footer__title">Acerca de Grill</h4>
+					<p class="about__text">Es la hora perfecta para comer una hamburguesa o una ensalada de bulgur o comida italiana,
+						mexicana u oriental.</p>
+					<p class="about__text">Pásate por <a class="about__link" href="">Grill</a></p>
+					<p class="about__text">Prueba nuestros platos</p>
 				</div>
-				<div>
-					<h4>Categorías de la tienda</h4>
-					<ul>
-						<li><a href="#"><i></i>Nuevo Grill Menu</a></li>
-						<li><a href="#"><i></i>Zumos frescos y saludables</a></li>
-						<li><a href="#"><i></i>Deliciosas comidas picantes</a></li>
-						<li><a href="#"><i></i>Pizzas italianas sencillas</a></li>
-						<li><a href="#"><i></i>Yogures muy buenos</a></li>
-						<li><a href="#"><i></i>Helados para niños</a></li>
+				<div class="footer__section categories">
+					<h4 class="footer__title">Categorías de la tienda</h4>
+					<ul class="categories__list">
+						<li class="categories__item"><a class="categories__link" href="#"><i class="fas fa-angle-right"></i>Nuevo Grill
+								Menu</a></li>
+						<li class="categories__item"><a class="categories__link" href="#"><i class="fas fa-angle-right"></i>Zumos frescos
+								y saludables</a></li>
+						<li class="categories__item"><a class="categories__link" href="#"><i class="fas fa-angle-right"></i>Deliciosas
+								comidas picantes</a></li>
+						<li class="categories__item"><a class="categories__link" href="#"><i class="fas fa-angle-right"></i>Pizzas
+								italianas sencillas</a></li>
+						<li class="categories__item"><a class="categories__link" href="#"><i class="fas fa-angle-right"></i>Yogures muy
+								buenos</a></li>
+						<li class="categories__item"><a class="categories__link" href="#"><i class="fas fa-angle-right"></i>Helados para
+								niños</a></li>
 					</ul>
 				</div>
-				<div>
-					<h4>Mensajes recientes</h4>
-					<div>
-						<div>
-							<img src="images/recent-post1.jpg" alt="">
+				<div class="footer__section mensajes">
+					<h4 class="footer__title">Mensajes recientes</h4>
+					<div class="mensajes__item">
+						<div class="mensajes__miniatura">
+							<img class="mensajes__img" src="images/recent-post1.jpg" alt="">
 						</div>
-						<div>
-							<h6><a href="#">Menús deliciosos y saludables</a></h6>
-							<span>24/12/2017</span>
+						<div class="mensajes__content">
+							<h6 class="mensajes__title"><a class="mensajes__link" href="#">Menús deliciosos y saludables</a></h6>
+							<span class="mensajes__fecha">24/12/2017</span>
 						</div>
 					</div>
-					<div>
-						<div>
-							<img src="images/recent-post2.jpg" alt="">
+					<div class="mensajes__item">
+						<div class="mensajes__miniatura">
+							<img class="mensajes__img" src="images/recent-post2.jpg" alt="">
 						</div>
-						<div>
-							<h6><a href="#">Comidas sencillas y eficaces</a></h6>
-							<span>18/12/2017</span>
+						<div class="mensajes__content">
+							<h6 class="mensajes__title"><a class="mensajes__link" href="#">Comidas sencillas y eficaces</a></h6>
+							<span class="mensajes__fecha">18/12/2017</span>
 						</div>
 					</div>
 				</div>
-				<div>
-					<h4>Más info</h4>
-					<p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.</p>
-					<ul>
-						<li><i></i>123-456-7890</li>
-						<li><i></i>Praza da Lexión s/n, 32002 - Ourense</li>
-						<li><i></i><a href="#">info@acarballeira.es</a></li>
+				<div class="footer__section info">
+					<h4 class="footer__title">Más info</h4>
+					<p class="info__text">Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa
+						id elit.</p>
+					<ul class="info__lista">
+						<li class="info__item"><i class="fas fa-phone"></i>123-456-7890</li>
+						<li class="info__item"><i class="fas fa-globe-europe"></i>Praza da Lexión s/n, 32002 - Ourense</li>
+						<li class="info__item"><i class="fas fa-envelope"></i><a class="info__link" href="#">info@acarballeira.es</a></li>
 					</ul>
 				</div>
 			</div>
-			<div>
-				<p>
-					<span>Copyright © 2018 <a href="#">CIFP A Carballeira</a>
+			<div class="copyright">
+				<p class="copyright__content">
+					<span class="copyright__text">Copyright © 2018 <a class="copyright__link" href="#">CIFP A Carballeira</a>
 					</span>
 				</p>
 			</div>
-
 		</div>
 	</footer>
 </body>
