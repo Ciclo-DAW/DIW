@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: IcoMoon;
+  src: url(fonts/icomoon/icomoon.ttf);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.portada {
+  width: 100%;
+  background-image: url(images/img_bg_2.jpg);
+  background-size: cover;
+}
+
+.portada__content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navigation__content {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.navigation__logo {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.logo__link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo__link em {
+  color: #0addbf;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.menu__link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu__link:hover {
+  color: #0addbf;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header__eslogan {
+  width: 50%;
+}
+
+.header__eslogan h1 {
+  font-size: 59px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.header__form {
+  flex-basis: 33%;
+  color: #777;
+  background-color: #fff;
+  padding: 30px 15px;
+  border-top: 7px solid #0addbf;
+}
+
+.form__title {
+  color: black;
+  font-size: 18px;
+}
+
+.form__form input,
+.form__form select {
+  width: 100%;
+  border: 1px solid #777;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.form__form input:focus,
+.form__form select:focus {
+  border: 1px solid #0addbf;
+}
+
+.form__form label {
+  font-size: 14px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.form__form .form__button {
+  margin-top: 10px;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+  background-color: #0addbf;
+  border: none;
+}
+
+/* ------------------------------ZONA 2----------------------------- */
+
+.section__destinos {
+  margin-top: 80px;
+  background-color: #fff;
+  color: #000;
+}
+
+.destinos__content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.destinos__header {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.destinos__title {
+  font-size: 50px;
+  color: #777;
+}
+
+.destinos__subtitle {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #777;
+  width: 80%;
+}
+
+.destinos__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.destino {
+  margin: 20px 8px;
+  width: calc(33% - 16px);
+  padding-bottom: 15px;
+  transition: 0.3s all ease;
+}
+
+.destino__imagen {
+  width: 100%;
+}
+
+.destino__img {
+  width: 100%;
+}
+
+.destino__link,
+.destino__link:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.destino__desc {
+  text-align: center;
+}
+
+.destino__title {
+  color: #0addbf;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.destino__subtitle {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.destino__button {
+  background-color: #000;
+  color: white;
+  font-size: 14px;
+  line-height: 14px;
+  display: inline-block;
+  padding: 7px 17px;
+  border-radius: 4px;
+  transition: 0.3s all ease;
+}
+
+.destino__link:hover .destino__button {
+  background-color: #0addbf;
+}
+
+.destino:hover {
+  box-shadow: 10px 10px 30px -10px rgb(143, 143, 143);
+}
+
+/* ------------------------------ZONA 3----------------------------- */
+
+.section__suscribe {
+  width: 100%;
+  background-color: #0098ef;
+  margin-top: 80px;
+}
+
+.suscribe__content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.suscribe__title {
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.suscribe__subtitle {
+  color: #80ccf7;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.suscribe__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.suscribe__form label {
+  display: none;
+}
+
+.suscribe__input {
+  border: 1px solid #80ccf7;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #0098ef;
+  font-size: 13px;
+  width: 100%;
+}
+
+.suscribe__input::placeholder {
+  color: #80ccf7;
+  opacity: 1;
+}
+
+.suscribe__input::-webkit-input-placeholder {
+  color: #80ccf7;
+}
+
+.form__left {
+  margin-right: 10px;
+}
+
+.form__right {
+  margin-left: 10px;
+}
+
+.form__left,
+.form__right {
+  width: 30%;
+}
+
+.suscribe__button {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  background-color: #0addbf;
+  border: none;
+}
+
+/* ------------------------------ZONA 4----------------------------- */
+
+.bottom__content {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 80px;
+  justify-content: space-between;
+  color: #777;
+}
+
+.bottom__content > *:not(last-child) {
+  margin-right: 30px;
+}
+
+.bottom__about {
+  max-width: 30%;
+}
+
+.bottom__content h3 {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.bottom__content a {
+  text-decoration: none;
+  color: #0addbf;
+}
+
+.bottom__content li {
+  list-style: none;
+}
+
+/* ------------------------------ZONA 5----------------------------- */
+footer {
+  margin-top: 80px;
+}
+.footer__content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copy a {
+  color: #0addbf;
+  text-decoration: none;
+}
+
+.footer__links {
+  display: flex;
+  list-style: none;
+  text-align: right;
+}
+
+.footer__links > li:not(last-child) {
+  margin-right: 10px;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: #0addbf;
+}
+
+/* ------------------------------MEDIA QUERIES----------------------------- */
+
+@media (max-width: 1200px) {
+  .destino {
+    width: calc(50% - 16px);
+  }
+
+  .bottom__about {
+    max-width: 50%;
+  }
+  .bottom__content {
+    flex-wrap: wrap;
+  }
+  .bottom__content > * {
+    width: 50%;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .header__content {
+    flex-wrap: wrap;
+  }
+  .header__eslogan {
+    width: 100%;
+  }
+
+  .header__form {
+    flex-basis: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .destino {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .bottom__about {
+    max-width: 100%;
+  }
+  .bottom__content > * {
+    width: 100%;
+    margin: 0 0 20px 0 !important;
+    text-align: center;
+  }
+
+  .footer__content {
+    flex-wrap: wrap;
+  }
+
+  .footer__content > * {
+    width: 100%;
+    text-align: center;
+  }
+}
