@@ -96,7 +96,12 @@ h1 {
   left: 0;
   transition: left 0.3s ease-in;
   -webkit-transition: left 0.3s ease-in;
+  -moz-transition: left 0.3s ease-in;
+  -o-transition: left 0.3s ease-in;
   animation: animacion 12s infinite;
+  -webkit-animation: animacion 12s infinite;
+  -moz-animation: animacion 12s infinite;
+  -o-animation: animacion 12s infinite;
 }
 
 .boton:nth-child(1):checked ~ .contenedor-img {
@@ -116,6 +121,51 @@ h1 {
 }
 
 @keyframes animacion {
+  0% {
+    left: 0;
+  }
+  33% {
+    left: -100%;
+  }
+  66% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+@-webkit-keyframes animacion {
+  0% {
+    left: 0;
+  }
+  33% {
+    left: -100%;
+  }
+  66% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+@-moz-keyframes animacion {
+  0% {
+    left: 0;
+  }
+  33% {
+    left: -100%;
+  }
+  66% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+@-o-keyframes animacion {
   0% {
     left: 0;
   }
